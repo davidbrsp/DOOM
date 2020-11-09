@@ -31,7 +31,9 @@ rcsid[] = "$Id: w_wad.c,v 1.5 1997/02/03 16:47:57 b1 Exp $";
 #include <sys/types.h>
 #include <string.h>
 #include <unistd.h>
-#include <malloc.h>
+// @davidbrsp
+#include <stdlib.h>
+//#include <malloc.h>
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <alloca.h>

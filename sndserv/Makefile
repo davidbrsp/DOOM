@@ -11,7 +11,7 @@ CFLAGS=-O -DNORMALUNIX -DLINUX
 LDFLAGS=
 LIBS=-lm
 
-O=linux
+O=../linuxdoom-1.10/linux
 
 all:	 $(O)/sndserver
 

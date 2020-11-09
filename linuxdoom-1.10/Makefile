@@ -6,9 +6,17 @@
 #
 CC=  gcc  # gcc or g++
 
+#CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM 
 CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM 
 LDFLAGS=-L/usr/X11R6/lib
-LIBS=-lXext -lX11 -lnsl -lm
+#LIBS=-lXext -lX11 -lnsl -lm
+
+# @davidbrsp
+LIBS=-lXext -lX11 -lm
+CFLAGS=-g -Wall -DNORMALUNIX -DLINUX -I/opt/X11/include # -DUSEASM 
+LDFLAGS=-L/usr/local/lib
+#LDFLAGS=-L/usr/lib/i386-linux-gnu/
+#LIBS=-lXext -lX11 -lnsl -lm -m32
 
 # subdirectory for objects
 O=linux
